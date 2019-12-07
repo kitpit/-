@@ -1,0 +1,7 @@
+<view class="calendar">
+  <image class='calendar_img' src='{{imgSrc}}'></image>
+  <view class="calendar_wrap">
+    <view class='day'>{{message.datetime}}</view>
+  </view>
+  <view class='calendar_font'>{{message.sentence}}</view>
+</view>

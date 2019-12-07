@@ -1,0 +1,22 @@
+.each-container{
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  margin: 0 auto 120rpx;
+  width: 500rpx;
+  height: 100rpx;
+}
+.time{
+  color: white;
+  margin-right: 65rpx;
+}
+.circle{
+  margin-right: 20rpx;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius:50%;  
+  background-color: white;
+}
+.tittle{
+  color: white;
+}

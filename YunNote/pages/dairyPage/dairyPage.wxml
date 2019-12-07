@@ -1,0 +1,60 @@
+<view class='tittle'>
+ <input type='text' placeholder='请输入标题' auto-focus bindinput='bindTitle' value='{{title}}'/>
+ </view>
+ <view class='content' catchtap='hideLabel'>
+   <textarea placeholder='请输入内容' maxlength='-1' bindinput="bindText" value='{{content}}'></textarea>
+  </view>
+<!-- <modal  hidden="{{hiddenDeleteModal}}" title="删除标签" confirm-text="删除" cancel-text="取消" bindcancel="cancelDelete" bindconfirm="confirmDelete">
+</modal> -->
+<view wx:if="{{!hiddenDeleteModal}}">
+  <view class='modal'></view>
+  <view class='alert-box'>
+  <view class='alert-head'>删除标签</view>
+  <view class='alert-input'>确认删除</view>
+  <view class='alert-choose'>
+    <view bindtap='cancelDelete'>取消</view>
+    <view class='alert-add' bindtap='confirmDelete'>删除</view>
+  </view>
+</view>
+</view>
+<!-- <modal  hidden="{{hiddenAddModal}}" title="添加标签" confirm-text="添加" cancel-text="取消" bindcancel="cancelAdd" bindconfirm="confirmAdd">
+  <input type='text' placeholder='请输入标签名' auto-focus bindinput='addTag' maxlength='12'/>
+</modal> -->
+<view wx:if="{{!hiddenAddModal}}">
+  <view class='modal'></view>
+  <view class='alert-box'>
+  <view class='alert-head'>添加标签</view>
+  <input type='text' placeholder='请输入标签名' auto-focus bindinput='addTag' maxlength='12' class="alert-input"/>
+  <view class='alert-choose'>
+    <view bindtap='cancelAdd'>取消</view>
+    <view class='alert-add' bindtap='confirmAdd'>添加</view>
+  </view>
+</view>
+</view> 
+<!-- 标签  -->
+<view class='tag-container'>
+   <!-- <text class='first-box' wx:if="{{tagList1}}" catchtap='deleteLabel' data-id='1'>{{tagList1}}</text>  -->
+  <view>
+      <view  class='first-box'  wx:if="{{tagList1}}">
+        <image  class='tag-img' src='../../images/ax.png'></image>
+        <text catchtap='deleteLabel' data-id='1'>{{tagList1}}</text>
+      </view>
+  </view>
+  <view>
+      <view  class='first-box'  wx:if="{{tagList2}}">
+        <image  class='tag-img' src='../../images/ax.png'></image>
+        <text catchtap='deleteLabel' data-id='2'>{{tagList2}}</text>
+      </view>
+  </view>
+  <view>
+      <view  class='first-box'  wx:if="{{tagList3}}">
+        <image  class='tag-img' src='../../../images/ax.png'></image>
+        <text catchtap='deleteLabel' data-id='3'>{{tagList3}}</text>
+      </view>
+  </view>
+</view>
+<view class='bottom'>
+   <image class="save" src='../../images/save.png' bindtap='sendDairy'></image>
+  <image class="photo" src='../../images/photo.png'></image>
+  <image class="label" src='../../images/label.png' catchtap='showLabel'></image> 
+</view>

@@ -1,0 +1,29 @@
+.label_one,.label_two{
+  margin:15rpx 0;
+  padding:10rpx 10rpx ;
+  font-size: 50rpx;
+  color: white;
+  background-color: #0d5ba3;
+  position: relative;
+}
+.fontPadding{
+  padding-left: 40rpx;
+}
+.backgound-img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+}
+.backgound-img image{
+  width: 100%;
+  height: 100%;
+}
+.next-icon{
+  position: absolute;
+  top: -18rpx;
+  right: 50rpx;
+  font-size: 80rpx;
+}

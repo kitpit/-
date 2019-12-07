@@ -1,0 +1,8 @@
+
+  <view class='title'>
+    <text>云Note</text>
+  </view>
+  <navigator url="../../pages/index/index" hover-class="navigator-hover" open-type="redirect">
+    <button type="primary" plain open-type="getUserInfo" bindgetuserinfo="handleGetUserInfo" >登录</button>
+  </navigator>
+   

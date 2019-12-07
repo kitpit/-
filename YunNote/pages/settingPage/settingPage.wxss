@@ -1,0 +1,14 @@
+.about{
+  margin: 30rpx;
+  padding-bottom:30rpx ;
+  border-bottom: 2rpx solid #0d5ba3;
+  font-size: 0.8em;
+  color: #0d5ba3;
+}
+.feedback{
+  margin: 30rpx;
+  padding-bottom:30rpx;
+  border-bottom: 2rpx solid #0d5ba3;
+  font-size: 0.8em;
+  color: #0d5ba3;
+}

@@ -1,0 +1,94 @@
+.head{
+  background-color: #0d5ba3;
+  height: 80rpx;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding-top: 15rpx;
+  }
+.content{
+  margin: 30rpx auto;
+  padding-bottom:30rpx ;
+  width: 80%;
+  height: 800rpx;
+  font-size: 0.8em;
+  color: #0d5ba3;
+  opacity: 0.6;
+}
+.content textarea{
+  height: 100%;
+}
+.bottom{
+  position: fixed;
+  bottom: 0;
+  height: 100rpx;
+  background-color:  #0d5ba3;
+  width: 100%;
+}
+.save{
+  width: 70rpx;
+  height: 50rpx;
+  float: right;
+  margin-top:20rpx;
+  margin-right: 40rpx;
+  margin-left: 20rpx;
+}
+.photo{
+  width: 60rpx;
+  height: 50rpx;
+  float: right;
+  margin:20rpx 20rpx;
+}
+.label{
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+  margin:20rpx 20rpx;
+}
+.unlocking{
+  position: absolute;
+  width: 50rpx;
+  height: 50rpx;
+  z-index: 99;
+  top: 1010rpx;
+  left: 655rpx;
+}
+.labelNav{
+  position: absolute;
+  width: 200rpx;
+  height: 280rpx;
+  background-color: white;
+  border-radius: 10rpx;
+  left: 400rpx;
+  top: 900rpx;
+  z-index: 99;
+  box-shadow: 1rpx 1rpx 2rpx gray;
+}
+.labelNav view{
+margin: 30rpx 30rpx;
+font-size: 0.8em;
+color: #0d5ba3;
+}
+.tag-container{
+  width: 80%;
+  height: 70rpx;
+  margin-left: 30rpx;
+  word-wrap:break-word;
+}
+.tag-container text{
+  display: block;
+  width: auto;
+  margin-right: 30rpx;
+  margin-bottom: 10rpx;
+  height: 60rpx;
+  border-radius: 10rpx;
+}
+.first-box{
+  background-color: yellow;
+}
+.second-box{
+  background-color: red;
+}
+.third-box{
+  background-color: blue;
+}

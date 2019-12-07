@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "DairyBox": "../../component/dairyBox/index"
+  }
+}

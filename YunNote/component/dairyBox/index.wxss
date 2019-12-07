@@ -1,0 +1,60 @@
+.content1_left{
+  float: left;
+  width:20%;
+  height: 100%;
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 0.8em;
+  color: #0d5ba3;
+}
+.content1_middle{
+  padding: 20rpx 10rpx;
+  float: left;
+  width: 60%;
+  height: 100%;
+  font-size: 0.8em;
+  color: #0d5ba3;
+}
+.content1_middle_tittle{
+  font-size: 1.2em;
+  color: #0d5ba3;
+}
+.content1_right{
+  float: left;
+  height: 100%;
+  width: 20%;
+  padding: 20rpx 0;
+  text-align: center;
+  font-size: 0.8em;
+  color: #0d5ba3;
+}
+.img_locking{
+   width: 30rpx;
+  height: 30rpx;
+  margin-left:10%; 
+  margin-top: 40rpx;
+  color: #0d5ba3;
+}
+.content1{
+  display: flex;
+  margin: 30rpx auto 0; 
+  width: 600rpx;
+  height: 150rpx;
+  background-color: white;
+  border-radius:10px;
+  color: #0d5ba3;
+}
+.checkBox{
+  position: absolute;
+  z-index: 100;
+  top: 60rpx;
+  left: 15rpx;
+  width: 20rpx;
+  height: 20rpx;
+  background-color: white;
+  border: solid 2px white;
+}
+.container{
+  position: relative;
+  width: 760rpx;
+}

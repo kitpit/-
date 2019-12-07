@@ -1,0 +1,61 @@
+<view class='tittle'>
+  <input type='text' placeholder='请输入标题' bindinput='bindTitle' value='{{title}}' />
+</view>
+<view class='content' catchtap='hideLabel'>
+  <textarea placeholder='请输入内容' maxlength='-1' bindinput="bindText" value='{{content}}'></textarea>
+</view>
+<view class='labelNav' style='{{labelShow}}'>
+  <view catchtap='addLabel'>添加标签</view>
+</view>
+<!-- 标签  -->
+<view class='tag-container'>
+  <view>
+    <view class='first-box' wx:if="{{tagList[0]}}">
+      <image class='tag-img' src='../../../images/ax.png'></image>
+      <text catchtap='deleteLabel' data-id='0'>{{tagList[0]}}</text>
+    </view>
+  </view>
+  <view>
+    <view class='first-box' wx:if="{{tagList[1]}}">
+      <image class='tag-img' src='../../../images/ax.png'></image>
+      <text catchtap='deleteLabel' data-id='1'>{{tagList[1]}}</text>
+    </view>
+  </view>
+  <view>
+    <view class='first-box' wx:if="{{tagList[2]}}">
+      <image class='tag-img' src='../../../images/ax.png'></image>
+      <text catchtap='deleteLabel' data-id='2'>{{tagList[2]}}</text>
+    </view>
+  </view>
+</view>
+<view class='bottom'>
+  <image class="save" src='../../../images/save.png' bindtap='sendDairy'></image>
+  <image class="photo" src='../../../images/photo.png'></image>
+  <image class="label" src='../../../images/label.png' catchtap='showLabel'></image>
+</view>
+<image class='unlocking' src='../../../../images/unlocking.png'></image>
+<!-- <modal  hidden="{{hiddenModal}}" title="添加标签" confirm-text="添加" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm" class="modal">
+  <input type='text' placeholder='请输入标签名' auto-focus bindinput='addTag' maxlength='12'/>
+</modal>   -->
+<view wx:if="{{!hiddenModal}}">
+  <view class='modal'></view>
+  <view class='alert-box'>
+    <view class='alert-head'>添加标签</view>
+    <input type='text' placeholder='请输入标签名' auto-focus bindinput='addTag' maxlength='12' class="alert-input" />
+    <view class='alert-choose'>
+      <view bindtap='cancel'>取消</view>
+      <view class='alert-add' bindtap='confirm'>添加</view>
+    </view>
+  </view>
+</view>
+<view wx:if="{{hiddenDeleteModal}}">
+  <view class='modal'></view>
+  <view class='alert-box'>
+    <view class='alert-head'>删除标签</view>
+    <view class='alert-input'>确认删除</view>
+    <view class='alert-choose'>
+      <view bindtap='cancelDelete'>取消</view>
+      <view class='alert-add' bindtap='confirmDelete'>删除</view>
+    </view>
+  </view>
+</view>

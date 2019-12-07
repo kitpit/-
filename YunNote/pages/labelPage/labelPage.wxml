@@ -1,0 +1,9 @@
+<view wx:for="{{tagList.tags}}" wx:key="item" wx:for-item="item">
+  <view class='label_two' catchtap='showTagDetail' data-content='{{item}}'>
+    <text class='fontPadding'>{{item}}</text>
+    <text class='next-icon'>></text>
+  </view>
+</view>
+<view class='backgound-img'>
+  <image src='../../images/background.jpg'></image>
+</view>

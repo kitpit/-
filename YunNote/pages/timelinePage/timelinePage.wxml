@@ -1,0 +1,9 @@
+<view class='container'>
+  <view class='line'></view>
+  <view wx:for="{{lineList}}" wx:item="item" wx:key="index">
+      <BigCircleLine time="{{item.datetime}}" title="{{item.title}}" message="{{item}}"/>
+  </view>
+</view>
+<view class='backgound-img'>
+  <image src='../../images/background.jpg'></image>
+</view>

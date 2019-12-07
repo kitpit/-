@@ -1,0 +1,5 @@
+<view class='each-container' bindtap='turnDetail'>
+  <text class='time'>{{time}}</text>
+  <view class='circle'></view>
+  <view class='tittle'>{{title}}</view>
+</view>

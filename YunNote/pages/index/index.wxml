@@ -1,0 +1,70 @@
+
+<view class='container' bindlongtap='deleteChoose'>
+  <view class='head' style='{{headerDeleteStyle}}'>
+    <text bindtap='deleteAll'>删除</text>
+    <text bindtap='cancelDelete'>取消</text>
+  </view>
+  <view class='head' style='{{headerStyle}}'>
+    <view class='head_left'>
+      <navigator url='../calendarPage/calendarPage' hover-class='navigator-hover'>
+        <image class='img_left' src="../../images/calendar.png"></image>
+      </navigator>
+    </view>
+    <view class='head_middle'>{{pageType}}</view>
+    <view class='head_right'>
+      <navigator url='../settingPage/settingPage' hover-class='navigator-hover'>
+        <image class='img_right' src='../../images/set.png'></image>
+      </navigator>
+    </view>
+  </view>
+<!-------------------------------------------------------------->
+<!--    消息列表    -->
+  <view class='dairy-box-container'>
+    <view wx:for="{{listData}}" wx:for-index="id" wx:for-item="item" wx:key="item">
+        <DairyBox date="{{item.date}}" week="{{item.week}}" time="{{item.time}}" title="{{item.title}}" content="{{item.body}}" temperature="{{item.year}}" message="{{item}}" deleteStyle="{{deleteStyle}}" turnFlag="{{turnFlag}}" bind:getId="getId" />  
+    </view>
+  </view>
+  <!-- 选择类型  -->
+  <view>
+    <view class='back-container'  catchtap='hideNoteChoose' style='{{showTypeFlag}}'></view>
+    <view class='type-container' style='{{showTypeFlag}}'>
+      <view class='classified'>
+        <text>分类</text>
+        <text bindtap='turnTimeLine'>时光轴</text>
+        <text bindtap='turnTag'>标签</text>
+      </view>
+      <view class='type'>
+        <text>类型</text>
+        <text bindtap='getDairy'>日记本</text>
+        <text bindtap='getForget'>备忘录</text>
+      </view>
+    </view>
+  </view>
+
+<!--    -->
+<!--     搜索    -->
+  <view>
+      <view class='sousuoNav' style='{{sousouFlag}}'>
+        <input bindinput="getSousouContent"></input>
+        <image class='find' src='../../images/sousuo.png' catchtap='searchBox'></image>
+      </view>
+      <view class='back-container'  catchtap='hideSousou' style='{{sousouFlag}}'></view>
+  </view> 
+<!--  -->
+  <view class='bottom_nav'>
+    <image class='catalog' src='../../images/catalog.png' catchtap='showType'></image>
+    <image class='pen' src='../../images/pen.png' catchtap='showNoteChoose'></image>
+    <image class='sousuo' src='../../images/sousuo.png' catchtap='showSousou'></image>
+    <view class='body-container' style='{{noteChooseStyle}}' catchtap='clearNoteChoose'>
+      <view class='penNav'>
+        <view class='penNavbg'>
+            <view class='penNav_dairy' catchtap='returnDairy'>日记本</view>
+            <view class='penNav_forg' catchtap='returnForget'>备忘录</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class='backgound-img'>
+  <image src='../../images/background.jpg'></image>
+</view>

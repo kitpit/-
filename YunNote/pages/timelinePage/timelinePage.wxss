@@ -1,0 +1,26 @@
+page{
+  background-color:  #0d5ba3;
+  height: 100%;
+}
+.line{
+  width: 20rpx;
+  overflow: hidden;
+  height: 100%;
+  background-color: white;
+  position: fixed;
+  left: 374.5rpx; 
+  border-top-left-radius:10rpx;
+  border-top-right-radius: 10rpx; 
+}
+.backgound-img{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1000;
+}
+.backgound-img image{
+  width: 100%;
+  height: 100%;
+}

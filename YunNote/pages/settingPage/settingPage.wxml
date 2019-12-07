@@ -1,0 +1,3 @@
+<view class='about' bindtap='turnAboutUs'>关于</view>
+<view class='feedback' bindtap='turnSuggestion'>反馈</view>
+<view class='feedback' bindtap='turnNote'>说明</view>

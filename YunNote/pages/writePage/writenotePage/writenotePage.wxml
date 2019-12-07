@@ -1,0 +1,21 @@
+<view class='content' catchtap='hideLabel'>
+  <textarea placeholder='请输入内容' maxlength='-1' bindinput="bindText" value='{{content}}'></textarea>
+</view>
+<image class='unlocking' src='../../../images/unlocking.png'></image>
+<view class='labelNav' style='{{labelShow}}'>
+  <view catchtap='addLabel'>添加标签</view>
+</view>
+<modal  hidden="{{hiddenModal}}" title="添加标签" confirm-text="添加" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">
+  <input type='text' placeholder='请输入标签名' auto-focus bindinput='addTag'/>
+</modal>
+<!-- 标签  -->
+<view class='tag-container'>
+  <text class='first-box' wx:if="{{tagList[0]}}">{{tagList[0]}}</text>
+  <text class='second-box' wx:if="{{tagList[1]}}">{{tagList[1]}}</text>
+  <text class='third-box' wx:if="{{tagList[2]}}">{{tagList[2]}}</text>
+</view>
+<view class='bottom'>
+  <image class="save" src='../../../images/save.png' catchtap='sendMessage'></image>
+  <image class="photo" src='../../../images/photo.png'></image>
+  <image class="label" src='../../../images/label.png' catchtap='showLabel'></image>
+</view>

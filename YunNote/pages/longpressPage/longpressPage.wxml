@@ -1,0 +1,68 @@
+<view class='container'>
+  <view class='head'>
+    <image class='img_optionbox' src='../../images/optionbox.png'></image>
+    <view class='head_left'> 全部</view>
+    <view class='head_move'>移动</view>
+    <view class='head_delect'>删除</view>
+  </view>
+<!-------------------------------------------------------------->
+<view>
+  <image class='content_optionbox' src='../../images/optionbox.png'></image>
+  <navigator url='../dairyPage/dairyPage' hover-class='navigator-hover'>
+    <view class='content1'>
+      <view class='content1_left'>
+      <text>10\n星期二\n20:00</text>
+    </view>
+    <view class='content1_middle'>
+      <view class='content1_middle_tittle'>春游</view>
+      <text>和好朋友一起玩很开心</text>
+    </view>
+    <view class='content1_right'>
+      <view>23℃</view>
+      <image class='img_locking' src='../../images/locking.png'></image>
+    </view>
+</view>
+</navigator>
+</view>
+<!-------------------------------------------------------------->
+<view>
+<image class='content_optionbox' src='../../images/optionbox.png'></image>
+<view class='content2'>
+  <view class='content2_left'>
+    <text>3\n星期二\n10:21</text>
+  </view>
+  <view class='content2_middle'>
+  <view class='content2_middle_tittle'>愚人节</view>
+    <text>今天居然表白成功，激动啊。</text>
+  </view>
+  <view class='content2_right'>
+  <view>21℃</view>
+    <image class='img_locking' src='../../images/locking.png'></image></view>
+</view>
+</view>
+<!-------------------------------------------------------------->
+<view>
+<image class='content_optionbox' src='../../images/optionbox.png'></image>
+<view class='content3'>
+  <view class='content3_left'>
+   <text>29\n星期天\n02:13</text>
+  </view>
+  <view class='content3_middle'>
+  <view class='content3_middle_tittle'>感冒</view>
+    <text>温度骤降，感冒未康。</text>
+  </view>
+  <view class='content3_right'>
+  <view>15℃</view>
+    <image class='img_unlocking' src='../../images/unlocking.png'></image></view>
+  </view>
+  </view>
+  <!-------------------------------------------------------------->
+  <view class='bottom_nav'>
+    <image class='catalog' src='../../images/catalog.png'></image>
+    <image class='pen' src='../../images/pen.png'></image>
+    <image class='sousuo' src='../../images/sousuo.png'></image>
+  </view>
+</view>
+
+
+ 

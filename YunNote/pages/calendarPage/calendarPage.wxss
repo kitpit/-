@@ -1,0 +1,42 @@
+page{
+  background-color: #dedddd;
+}
+.calendar {
+  height: 100%;
+  padding: 0rpx 0;
+} 
+.calendar_img{
+  display: block; 
+  width: 100%;
+  height: 800rpx;
+  margin-bottom: 60rpx;
+}
+.calendar_font{
+  width: 80%;
+  margin: 60rpx auto ;
+  color: black;
+  overflow: hidden;
+}
+.day {
+  float: left;
+  padding-right: 10rpx;
+  padding-left: 10rpx;
+}
+.month {
+  float: left;
+  border-right: 4rpx solid black;
+  padding-right: 10rpx;
+  padding-left: 10rpx;
+  color: black;
+}
+.week {
+  float: left;
+  padding-right: 10rpx;
+  padding-left: 10rpx;
+  color: black;
+}
+.calendar_wrap{
+  height: 60rpx;
+  padding-left:200rpx;
+  color: black;
+}

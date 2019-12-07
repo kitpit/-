@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "BigCircleLine": "../../component/bigCircleLine/index"
+  }
+}

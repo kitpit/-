@@ -1,0 +1,19 @@
+<view class='container'  bindtap='deleteBox'>
+<!-------------------------------------------------------------->
+
+<!-------------------------------------------------------------->
+  <view class='checkBox' style='{{deleteStyle}}'></view>
+  <view class='content1' bindtap='turnToDetail'>
+    <view class='content1_left'> 
+      <text>{{date}}\n{{week}}\n{{time}}</text>
+    </view>
+    <view class='content1_middle'>
+      <view class='content1_middle_tittle'>{{title}}</view>
+      <text>{{content}}</text>
+    </view>
+    <view class='content1_right'>
+      <view>{{temperature}}</view>
+      <image class='img_locking' src='../../images/locking.png'></image>
+    </view>
+  </view>
+  </view>

@@ -1,0 +1,33 @@
+{
+  "pages": [
+    "pages/login/index",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/calendarPage/calendarPage",
+    "pages/settingPage/settingPage",
+    "pages/dairyPage/dairyPage",
+    "pages/introduction/index",
+    "pages/sousuoPage/sousuoPage",
+    "pages/passwordPage/passwordPage",
+    "pages/longpressPage/longpressPage",
+    "pages/timelinePage/timelinePage",
+    "pages/writePage/writenotePage/writenotePage",
+    "pages/writePage/writedairyPage/writedairyPage",
+    "pages/writePage/writeforgPage/writeforgPage",
+    "component/dairyBox/index",
+    "component/bigCircleLine/index",
+    "pages/suggestion/index",
+    "pages/aboutUs/index",
+    "pages/labelPage/labelPage",
+    "pages/forgetPage/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#0d5ba3",
+    "navigationBarTitleText": "云Note",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+  },
+  "debug": false,
+  "sitemapLocation": "sitemap.json"
+}

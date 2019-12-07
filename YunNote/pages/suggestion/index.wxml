@@ -1,0 +1,16 @@
+<view class='tittle'>
+ <input type='text' placeholder='请输入标题' auto-focus bindinput='bindTitle' value='{{title}}'/>
+ </view>
+ <view class='content' catchtap='hideLabel'>
+   <textarea placeholder='请输入内容' maxlength='-1' bindinput="bindText" value='{{content}}'></textarea>
+</view>
+<!-- 标签  -->
+<view class='tag-container'>
+  <text class='first-box' wx:if="{{tagList[0]}}">{{tagList[0]}}</text>
+  <text class='second-box' wx:if="{{tagList[1]}}">{{tagList[1]}}</text>
+  <text class='third-box' wx:if="{{tagList[2]}}">{{tagList[2]}}</text>
+</view>
+<view class='bottom'>
+  <image class="save" src='../../images/save.png' bindtap='sendDairy'></image>
+</view>
+<image class='unlocking' src='../../images/unlocking.png'></image>
